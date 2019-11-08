@@ -1,11 +1,5 @@
 #!/usr/bin/env python
 # -*- coding=utf8 -*-
-"""
-# Author: luning
-# Created Time : 五 11/ 8 17:16:14 2019
-# File Name: engine/gui/sys_gui.py
-# Description:
-"""
 import base.sys as sys
 class SysGUI(sys.System):
     def __init__(self):

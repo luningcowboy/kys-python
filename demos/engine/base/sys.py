@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding=utf8 -*-
 class System:
     def __init__(self):
         self._coms = []
@@ -8,7 +10,7 @@ class System:
         self._isRunning = True
         self.onActive()
     def pause(self):
-        self._isRunning = False 
+        self._isRunning = False
         self.onPause()
     def stop(self):
         self._isRunning = False

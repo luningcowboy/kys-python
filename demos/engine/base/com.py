@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding=utf8 -*-
 from base import sys
 class Component:
     def __init__(self):
@@ -5,5 +7,7 @@ class Component:
         self._sysTag = ""
     def add2Sys(self):
         sys.addSystem(self._sysTag, self)
+    def active(self):
+        pass
     def update(self):
         pass
