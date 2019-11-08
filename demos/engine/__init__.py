@@ -6,4 +6,5 @@
 # File Name: engine/__init__.py
 # Description:
 """
-
+from engine import application
+app = application.Application()

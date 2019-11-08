@@ -7,7 +7,7 @@ import OpenGL.GL as gl
 from imgui.integrations.pygame import PygameRenderer
 import imgui
 
-class GameEngine():
+class Application():
     def __init__(self):
         pass
     def loadConf(self):
@@ -20,16 +20,15 @@ class GameEngine():
         self.impl = PygameRenderer()
         self.io = imgui.get_io()
         self.io.display_size = size
-    def loop(self):
+    def run(self):
         while 1:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     sys.exit()
                 self.impl.process_event(event)
-            self.imgui.new_frame()
+            imgui.new_frame()
             gl.glClearColor(1, 1, 1, 1)
             gl.glClear(gl.GL_COLOR_BUFFER_BIT)
             imgui.render()
-            impl.render(imgui.get_draw_data())
-
+            self.impl.render(imgui.get_draw_data())
             pygame.display.flip()
