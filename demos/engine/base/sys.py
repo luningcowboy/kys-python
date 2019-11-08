@@ -1,11 +1,33 @@
 class System:
     def __init__(self):
         self._coms = []
+        self._isActive = False
+        self._isRunning = False
+    def active(self):
+        self._isActive = True
+        self._isRunning = True
+        self.onActive()
+    def pause(self):
+        self._isRunning = False 
+        self.onPause()
+    def stop(self):
+        self._isRunning = False
+        self._isActive = False
+        self.onStop()
     def addCom(self, com):
         self._coms.append(com)
     def update(self):
+        self.onUpdate()
         for com in self._coms:
             com.update()
+    def onActive(self):
+        pass
+    def onPause(self):
+        pass
+    def onStop(self):
+        pass
+    def onUpdate(self):
+        pass
 
 systems = {}
 

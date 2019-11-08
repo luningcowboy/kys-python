@@ -27,6 +27,8 @@ class Application():
                     sys.exit()
                 self.impl.process_event(event)
             imgui.new_frame()
+            # render game elements
+            # render gui
             gl.glClearColor(1, 1, 1, 1)
             gl.glClear(gl.GL_COLOR_BUFFER_BIT)
             imgui.render()

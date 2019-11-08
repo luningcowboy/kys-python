@@ -4,6 +4,7 @@ base/ 基础功能
     com.py component基类
     sys.py system基类
     entity.py entity基类
+    world.py world基类，管理entity
 gui/ GUI封装
-music/ 杂项
+msic/ 杂项
 

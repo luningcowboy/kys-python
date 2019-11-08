@@ -8,4 +8,6 @@
 """
 class World:
     def __init__(self):
-        pass
+        self._entitys = []
+    def addEntity(self, entity):
+        self._entitys.append(entity)
