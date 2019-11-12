@@ -47,7 +47,12 @@ def main():
 
         imgui.begin("Custom window", True)
         imgui.text("Bar")
+        #imgui.same_line()
         imgui.text_colored("Eggs", 0.2, 1., 0.)
+        #imgui.same_line()
+        imgui.bullet_text("bullet_text")
+        # 不换行
+        #imgui.same_line()
         imgui.end()
 
         # note: cannot use screen.fill((1, 1, 1)) because pygame's screen
