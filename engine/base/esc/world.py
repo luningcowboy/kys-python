@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding=utf8 -*-
+"""
+管理所有的Entitys
+"""
 class World:
     def __init__(self):
         self._entitys = []
