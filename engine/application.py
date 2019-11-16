@@ -7,7 +7,7 @@ import OpenGL.GL as gl
 from imgui.integrations.pygame import PygameRenderer
 import imgui
 
-class Application():
+class Application(object):
     def __init__(self):
         pass
     def loadConf(self):

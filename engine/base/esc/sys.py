@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding=utf8 -*-
-class System:
+class System(object):
     def __init__(self):
         self._coms = []
         self._isActive = False

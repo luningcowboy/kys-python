@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding=utf8 -*-
 from base import sys
-class Component:
+class Component(object):
     def __init__(self):
         self._tag = ""
         self._sysTag = ""

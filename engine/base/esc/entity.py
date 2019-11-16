@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding=utf8 -*-
-class Entity:
+class Entity(object):
     def __init__(self):
         self._coms = []
     def addCom(self, com):
